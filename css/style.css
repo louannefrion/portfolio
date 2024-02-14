@@ -1,0 +1,371 @@
+/*/////////////////////////////////////////////////////////////////body/////////////////////////////////////////////////////////////////////*/
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+h2 {
+    font-family: cursive;
+}
+
+/*///////////////////////////////////////////////////////////////animation/////////////////////////////////////////////////////////////////*/
+
+.wrapper {
+    /*c'est la div de l'animation*/
+    position: relative;
+    z-index: 4;
+    overflow-y: hidden;
+}
+
+
+/*///////////////////////////////////////////////////////////////navbar/////////////////////////////////////////////////////////////////*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Style pour le texte de la navbar */
+.navbar-nav,
+.nav-link {
+    color: #000000;
+    /* Couleur du texte */
+    font-size: 16px;
+    /* Taille du texte */
+}
+
+/* Style au survol de la souris */
+.navbar-nav,
+.nav-link:hover {
+    color: #ff0000;
+    /* Couleur du texte au survol */
+}
+
+
+/*fond de page*/
+.background {
+    background-color: white;
+    height: 493, 7vh;
+    margin: 0;
+    z-index: 2;
+}
+
+/*///////////////////////////////////////////////////////////////premier bloc avec texte louanne et/////////////////////////////////////////////////////////////////*/
+
+/*couleur fond du premier bloc avec ma présentation*/
+.fond-rose {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+}
+
+/*bloc avec texte:loouanne fruon et présentation, c'est celui qui à la bordure rouge*/
+.block_couleur {
+    padding: 20px;
+    border: 5px solid rgb(255, 112, 112);
+}
+
+
+
+/*fond du texte "louanne frion..."*/
+.col-sm-8 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 35vh;
+
+}
+
+/*boite avec "louanne fron et présentation*/
+.custom-col {
+    height: 50vh;
+}
+
+
+
+.col-sm-4.custom-col {
+    height: 90vh;
+    /* 90% de la hauteur de la page */
+    background-color: #fff3cd;
+    margin-top: 5vh;
+}
+
+.carre {
+    background-color: #f8d7da;
+    width: 40%;
+    height: 63%;
+    position: absolute;
+    top: 61%;
+    /*carré au centre de l'écran */
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* Pour s'assurer que le carré noir est au-dessus du contenu */
+}
+
+.image {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* Ajout d'une classe pour rendre l'image responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-wrap {
+    margin-left: 20%;
+    margin-top: 6%;
+}
+
+
+/*///////////////////////////////////////////////////////////////deuxieme bloc avec mes savoir faire /////////////////////////////////////////////////////////////////*/
+/*contener bleu*/
+.p-4 {
+    background-color: #cce5ff;
+}
+
+/*images ronde*/
+.rounded-circle-no-stretch {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.custom-container {
+    z-index: 3;
+}
+
+.custom-bg-blue {
+    background-color: #ffffff;
+}
+
+/*///////////////////////////////////////////////////////////////bloc oeuvre d'arts/////////////////////////////////////////////////////////////////*/
+
+.fond {
+    background-color: white;
+    z-index: 3;
+}
+
+.about-img-shape {
+    margin: 30px;
+    z-index: 1
+}
+
+.about-img-shape::before {
+    position: absolute;
+    left: -31px;
+    top: -30px;
+    width: 80%;
+    height: 90%;
+    z-index: -1;
+    content: '';
+    background-color: #a7d8df;
+    transition: .5s;
+
+}
+
+.about-img-shape:after {
+    position: absolute;
+    right: -31px;
+    bottom: -30px;
+    width: 80%;
+    height: 90%;
+    z-index: -1;
+    content: '';
+    background-color: #f8d7da;
+    transition: .5s;
+}
+
+/*///////////////////////////////////////////////////////////////bloc graphisme /////////////////////////////////////////////////////////////////*/
+
+.lightbox {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 4;
+}
+
+.custom-border {
+    border: 5px solid #007bff;
+    /* Couleur de la bordure - utilisez votre couleur préférée */
+    padding: 5px;
+    /* Ajoutez un espace entre l'image et la bordure */
+    border-radius: 10px;
+    /* Ajustez la bordure arrondie selon vos préférences */
+}
+
+
+
+
+.galery1 {
+    background-color: white;
+    z-index: 4;
+}
+
+
+.galey2 {
+    background-color: white;
+    z-index: 4;
+}
+
+
+/*///////////////////////////////////////////////////////////////bloc photographies/////////////////////////////////////////////////////////////////*/
+.owl-carousel {
+    z-index: 3;
+}
+
+.owl-prev {
+    margin-right: 10px;
+    /* marge à droite */
+}
+
+.owl-next {
+    margin-left: 10px;
+    /* marge à gauche */
+}
+
+/*div entourant les boutons du carousel*/
+.owl-nav {
+    margin-top: 10px;
+    /*espacement entre les boutons et le carousel*/
+}
+
+.red {
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    padding: 5%;
+}
+
+.owl-carousel .item img {
+    height: 500px;
+    /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover;
+    /* Pour éviter le recadrage, mais cela pourrait entraîner une perte de contenu */
+    width: 100%;
+    /* Garantit que l'image remplit complètement la largeur du conteneur parent */
+}
+
+.image-frame {
+    border: 12px solid transparent;
+    /* bordure transparente  */
+}
+
+.border-primary {
+    border-color: #007bff !important;
+}
+
+.border-secondary {
+    border-color: #6c757d !important;
+}
+
+.border-success {
+    border-color: #28a745 !important;
+}
+
+.border-danger {
+    border-color: #dc3545 !important;
+}
+
+.border-warning {
+    border-color: #ffc107 !important;
+}
+
+.border-info {
+    border-color: #17a2b8 !important;
+}
+
+/*///////////////////////////////////////////////////////////////bloc footer/////////////////////////////////////////////////////////////////*/
+footer {
+    position: relative;
+    z-index: 4;
+}
+
+.links button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links button:hover {
+    background-color: #17a2b8;
+}
+
+
+/*///////////////////////////////////////////////////////////////pour les telephones/////////////////////////////////////////////////////////////////*/
+/* Ajout de styles pour les petits écrans */
+@media (max-width: 767px) {
+    .col-sm-8 {
+        margin-top: 10vh;
+    }
+
+    .col-sm-4.custom-col,
+    .carre {
+        display: none;
+        /* Cacher les éléments sur les petits écrans */
+    }
+
+    .carre {
+        width: 100%;
+        /*occuper toute la largeur de l'écran sur les petits écrans */
+    }
+
+    .text-wrap {
+        margin-top: 5%;
+    }
+
+    .image {
+        margin-top: 55%;
+        z-index: 3;
+    }
+
+    /* Styles spécifiques pour les petits écrans */
+    .col-sm-6 {
+        text-align: center;
+        /* Centrer le texte */
+        margin-bottom: 10px;
+        /*espace en bas pour éviter le chevauchement */
+    }
+
+    h1.text-wrap,
+    p.text-wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bg-primary,
+    .bg-danger,
+    .bg-white {
+        padding: 15px;
+        /* marge intérieure pour les petits écrans */
+    }
+
+    .background {
+        background-color: #faa7a726;
+        height: 415;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .owl-carousel .item img {
+        height: 230px;
+        object-fit: cover;
+        /* Pour éviter le recadrage*/
+        width: 100%;
+        /* Garantit que l'image remplit complètement la largeur du conteneur parent */
+    }
+}
